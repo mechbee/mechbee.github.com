@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>mechanical bees are the best bees</title>
-</head>
+---
+layout: default
+title: mechanical bees are the best bees
+---
 
-<body>
-</body>
-
-</html>
+{% for post in site.posts %}
+  <div class="post">
+    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+    <div class="post_content">
+      {{ post.content }}
+    </div>
+    
+    <p class="post_date">{{ post.date | date: '%B %d, %Y' }}</p>
+  </div>
+{% endfor %}
