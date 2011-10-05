@@ -1,0 +1,8 @@
+---
+layout: post
+title: testing the waters
+published: false
+author: judy
+---
+
+sol
