@@ -106,21 +106,11 @@ module Jekyll
     #
     # Returns string
     def category_links(categories)
-      categories = categories.sort!.map do |item|
-        '<a href="/blog/category/'+item+'/">'+item+'</a>'
+      categories = categories.map do |item|
+        '<a href="/categories/'+item+'/">'+item+'</a>'
       end
       
-      connector = "and"
-      case categories.length
-      when 0
-        ""
-      when 1
-        categories[0].to_s
-      when 2
-        "#{categories[0]} #{connector} #{categories[1]}"
-      else
-        "#{categories[0...-1].join(', ')}, #{connector} #{categories[-1]}"
-      end
+      categories.join(', ')
     end
     
     # Outputs the post.date as formatted html, with hooks for CSS styling.

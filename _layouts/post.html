@@ -2,6 +2,16 @@
 layout: default
 ---
 
-<div class="post">
-  {{ content }}
-</div>
+<article class="post">
+     
+ <h1>{{ page.title }}</h1>
+ 
+ <div class="post_meta">
+   <div class="post_date">{{ page.date | date: '%B %d, %Y' }}</div>
+   <div class="post_tags">{{ page.categories | category_links }}</div>
+ </div>
+ 
+ <div class="post_content">  
+   {{ content }}
+ </div>
+</article>
