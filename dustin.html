@@ -1,0 +1,11 @@
+---
+layout: category
+title: Posts by Dustin
+permalink: /dustin/index.html
+---
+
+{% for post in site.posts %}
+  {% if post.author == 'dustin' %}
+    {% include post.html %}
+  {% endif %}
+{% endfor %}

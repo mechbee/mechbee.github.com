@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Omniauth, openid, heroku, and https
-categories: [heroku, judy]
+category: heroku
+author: judy
 ---
 
 We recently added the option to log in or sign up with Facebook, Twitter, or Google using the handy [omniauth](https://github.com/intridea/omniauth) gem.

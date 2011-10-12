@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "How to auto reload gems that you're working on in Rails 3"
-categories: [rails, dustin]
+category: rails
+author: judy
 ---
 
 We recently moved our [CouchDB ORM](https://github.com/givmo/couch_record) code into its own Ruby gem because we're thinking about making it open source.  While working on the new ORM gem in the context of the Givmo Rails app, I wanted the the gem code to reload on every request like the rest of the code for the app.  For a while I was making frequent changes and restarting the server every time got old pretty fast.

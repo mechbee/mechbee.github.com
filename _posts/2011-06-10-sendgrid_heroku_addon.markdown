@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Why we don't use the Heroku SendGrid addon"
-categories: [heroku, judy]
+category: heroku
+author: judy
 ---
 
 **TL;DR**: When you use Heroku's SendGrid add-on, your account is a sub-user of the main Heroku account and  doesn't get manually provisioned or tiered based on goodness like solo SendGrid accounts. This means that the IP group your in is more likely to be populated with miscreants whose bad behavior decreases your own deliverability.  So if you're not a miscreant and don't want to get lumped in with other miscreants, you should just sign up for a normal SendGrid account&#8212;the [pricing/plans](http://sendgrid.com/pricing.html) are the same or better anyways.

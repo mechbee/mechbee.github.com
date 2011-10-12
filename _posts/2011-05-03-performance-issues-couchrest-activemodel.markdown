@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Performance issues with CouchRest::Model and ActiveModel"
-categories: [rails, couchdb, dustin]
+categories: [rails, couchdb]
+author: dustin
 ---
 
 For [Givmo](https://www.givmo.com), we have an admin page that lists about 100 records at a time and it was taking upwards of 10 seconds to load.  It doesn't do anything super complicated, so I didn't really have a good starting point for what to optimize.  Time to fire up the profiler.

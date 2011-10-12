@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Geek fun: building a lil' node.js app"
-categories: [heroku, node, judy]
+categories: [heroku, node]
+author: judy
 ---
 
 We recently wrote a little service in Node.js and [deployed it on Heroku's Cedar stack](http://devcenter.heroku.com/articles/node-js). All it does is return UPS shipping rates when we do an http get with certain parameters. So instead of hitting UPS directly every time an [item page](https://www.givmo.com/items/ad22badf6f3d59481ea9b9bd54f45352) loads, we hit the node app and it either pulls the rate out of Redis or asks UPS, meaning that shipping rates should come up a lot faster. We didn't *really* need to spin up a Node app for this but hey, this is how we have fun :D.

@@ -4,7 +4,12 @@
   
   <div class="post_meta">
     <div class="post_date">{{ post.date | date: '%B %d, %Y' }}</div>
-    <div class="post_tags">{{ post.categories | category_links }}</div>
+    <div class="post_tags">
+        {% for category in post.categories %}
+          <a href="/{{category}}">{{ category }}</a>, 
+        {% endfor %}
+        <a href="/{{post.author}}">{{ post.author }}</a>
+    </div>
   </div>
   
   <div class="post_content">  

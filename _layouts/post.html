@@ -8,7 +8,12 @@ layout: default
  
  <div class="post_meta">
    <div class="post_date">{{ page.date | date: '%B %d, %Y' }}</div>
-   <div class="post_tags">{{ page.categories | category_links }}</div>
+   <div class="post_tags">
+     {% for category in page.categories %}
+      <a href="/{{category}}">{{ category }}</a>, 
+    {% endfor %}
+    <a href="/{{page.author}}">{{ page.author }}</a>
+  </div>
  </div>
  
  <div class="post_content">  

@@ -1,0 +1,11 @@
+---
+layout: category
+title: Posts by Judy
+permalink: /judy/index.html
+---
+
+{% for post in site.posts %}
+  {% if post.author == 'judy' %}
+    {% include post.html %}
+  {% endif %}
+{% endfor %}

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "couch_record: a new CouchDB ORM for Ruby on Rails"
-categories: [rails, couchdb, judy]
+categories: [rails, couchdb]
+author: judy
 ---
 
 We'll write a more detailed post about it later but we're excited to open this up now: couch\_record, a new couchDB ORM for Ruby on Rails, using couchrest and based on our experiences with couchrest\_model and, to a lesser extent, couchrest\_rails.
