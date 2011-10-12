@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Why I'll (probably) never use CoffeeScript"
-categories: [rails, dustin]
+category: rails
+author: dustin
 ---
 
 We started a new project using [Rails 3.1](http://rubyonrails.org/), so i was checking out all the new stuff in this release.  Most of it looks great, since the new baked in features solve problems that we were using third party or home grown solutions for anyway.  On our last project (Rails 3.0), we used [Less](http://lesscss.org/) and [Jammit](http://documentcloud.github.com/jammit/).  On this one, we use [Sass](http://sass-lang.com/) and [Sprockets](https://github.com/sstephenson/sprockets).  Rails chose for us and that's great, because now we don't have to deal with it.  But there's one new feature that I just don't get: [CoffeeScript](http://jashkenas.github.com/coffee-script/).
