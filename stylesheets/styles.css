@@ -257,3 +257,9 @@ pre {
 .post h1 {margin-left:142px; width:580px;}
 .post_meta {float:left; width:120px; font-size:12px; line-height:18px; margin-top:22px; text-align:right; color:#777;}
 .post_content {float:left; width:580px; margin-left:22px;}
+
+#disqus_thread {
+  margin-top:36px;
+  margin-left:142px;
+  width:580px;
+}
