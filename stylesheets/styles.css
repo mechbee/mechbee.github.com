@@ -185,7 +185,7 @@ footer {
 
 footer .container {
   height:160px;
-  background:url('/images/footer_bee.gif') no-repeat 800px bottom;
+  background:url('/images/footer_bee.png') no-repeat 800px bottom;
 }
 
 #footer_push {height:240px;}
@@ -213,7 +213,12 @@ a:hover {
 .pull-left { float: left; }
 .hide { display: none; }
 .show { display: block; }
-
+.clear {clear: both;}
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after {content: "\0020"; display: block; height: 0; overflow: hidden;	} 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }  /* IE < 8 */
+    
 /* typography */
 h1, h2, h3, h4, h5, h6 { color: #484848; margin: 0;}
 h1 {font-size: 36px; font-weight:normal; font-family: 'MisoRegular', sans-serif; line-height:48px;}
@@ -251,15 +256,23 @@ pre {
   word-wrap: break-word;
 }
 
-.pagination {clear:both; margin:1em 0;}
-.pagination #paginate_next {float:right;}
+.pagination {
+  margin:0 auto; 
+  width:636px;
+  clear:both;
+  background: url('/images/post_hr.png') no-repeat top;
+  padding:46px 0;
+}
+
+.pagination #paginate_next {float:right; text-align:right; display:block;}
+.pagination #paginate_prev {float:left;}
 .post {clear:both; float:left; margin:1.5em 0;}
-.post h1 {margin-left:142px; width:580px;}
+.post h1 {width:656px; margin-left:142px;}
 .post_meta {float:left; width:120px; font-size:12px; line-height:18px; margin-top:22px; text-align:right; color:#777;}
-.post_content {float:left; width:580px; margin-left:22px;}
+.post_content {float:left; width:656px; margin-left:22px;}
 
 #disqus_thread {
   margin-top:36px;
   margin-left:142px;
-  width:580px;
+  width:656px;
 }
