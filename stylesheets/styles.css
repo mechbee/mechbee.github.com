@@ -251,7 +251,8 @@ pre {
   word-wrap: break-word;
 }
 
-#pagination {clear:both;}
+.pagination {clear:both; margin:1em 0;}
+.pagination #paginate_next {float:right;}
 .post {clear:both; float:left; margin:1.5em 0;}
 .post h1 {margin-left:142px; width:580px;}
 .post_meta {float:left; width:120px; font-size:12px; line-height:18px; margin-top:22px; text-align:right; color:#777;}

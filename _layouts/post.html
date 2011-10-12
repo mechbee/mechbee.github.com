@@ -20,3 +20,13 @@ layout: default
    {{ content }}
  </div>
 </article>
+
+<nav id="interpost" class="pagination">
+  {% if page.next != null %}
+    <a href="{{page.next.url}}" id="paginate_next">{{page.next.title}} &#8594;</a>
+  {% endif %}
+  
+  {% if page.previous != null %}
+    <a href="{{page.previous.url}}" id="paginate_prev">&#8592; {{page.previous.title}}</a>
+  {% endif %}
+</div>
