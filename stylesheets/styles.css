@@ -321,9 +321,6 @@ pre {
   margin:1em -142px 1em -22px; 
   padding:22px; 
   position:relative; 
-  -webkit-border-radius: 4px;
-  -mox-border-radius:4px;
-  border-radius:4px;
   border:1px solid #dedede; 
   border-bottom-color:#bbb;
 }
