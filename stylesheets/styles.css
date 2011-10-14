@@ -209,12 +209,12 @@ footer {
 footer .container {
   height:88px;
   padding:36px 0;
-  background:url('/images/footer_bee.png') no-repeat 734px bottom;
+  background:url('/images/footer_bee.png') no-repeat 724px bottom;
 }
 
 #footer_push {height:240px;}
 
-.container {width:874px; margin:0 auto; zoom:1;}
+.container {width:864px; margin:0 auto; zoom:1;}
 .container:before, .container:after {
   display: table;
   content: "";
@@ -224,7 +224,7 @@ footer .container {
 .container:after { clear: both;}
 
 a {
-  color: #2369c3;
+  color: #2565b7;
   text-decoration: none;
   line-height: inherit;
   font-weight: inherit;
@@ -246,8 +246,8 @@ a:hover {
 /* typography */
 h1, h2, h3, h4, h5, h6 { color: #484848; margin: 0;}
 h1, h2 {font-size: 36px; font-weight:normal; font-family: 'MisoRegular', sans-serif; line-height:48px;}
-h3 {font-size: 22px; line-height:36px;}
-h4 {font-size: 16px; line-height:24px; margin-bottom:12px;}
+h3 {font-size: 22px; line-height:36px; font-weight:normal;}
+h4 {font-size: 16px; line-height:24px; margin:12px 0;}
 h5 {font-size: 12px; text-transform:uppercase; line-height:16px}
 
 blockquote {
@@ -255,6 +255,7 @@ blockquote {
   border-left: 5px solid #eee;
   padding-left: 16px;
 }
+
 
 address {
   display: block;
@@ -313,3 +314,22 @@ pre {
 #connect a:hover {text-decoration:none; color:#8792a2;}
 .connect_icon {background-image:url('/images/footer_icons.png'); background-repeat:no-repeat; display:block; width:30px; margin-right:10px; height:36px; float:left;}
 #connect_github{background-position:bottom;}
+
+.media_callout {
+  background:#f8f8f8; 
+  margin:1em -142px 1em -22px; 
+  padding:22px; 
+  position:relative; 
+  border-radius:4px;
+  -mox-border-radius:4px;
+  -webkit-border-radius: 4px;
+  border:1px solid #dedede; 
+  border-bottom-color:#bbb;
+}
+.media_callout img {float:left;}
+.media_callout .media_shadow{width:740px; height:10px; position:absolute; bottom:-10px; left:0; background:url('/images/shadow.png') no-repeat top;}
+
+.project h3 {line-height:22px;}
+.project_description{margin-left:284px; padding-top:20px;}
+.project_keywords {color:#777; font-size:12px; line-height:18px;}
+#about_bios{margin-top:3em;}
