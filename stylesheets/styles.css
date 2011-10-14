@@ -199,7 +199,7 @@ header {padding:36px 0 48px; position:relative;}
 }
 
 #about_primary {float:right; width:160px; color:#999; font-size:12px; line-height:18px; margin-top:10px; margin-right:40px;}
-#about_primary h3 {font-family: 'MisoLight', sans-serif; font-weight:normal; margin:0; color:#474747; text-transform:0 1px 0 #fff;}
+#about_primary h3 {font-family: 'MisoLight', sans-serif; font-weight:normal; margin:0; color:#474747; text-shadow:0 1px 0 #fff;}
 
 footer {
   background:#415267;
@@ -315,21 +315,33 @@ pre {
 .connect_icon {background-image:url('/images/footer_icons.png'); background-repeat:no-repeat; display:block; width:30px; margin-right:10px; height:36px; float:left;}
 #connect_github{background-position:bottom;}
 
-.media_callout {
+.shadow{position:absolute; bottom:-10px; left:0; height:10px; background-position:top center; background-repeat:no-repeat;}
+.project {
   background:#f8f8f8; 
   margin:1em -142px 1em -22px; 
   padding:22px; 
   position:relative; 
-  border-radius:4px;
-  -mox-border-radius:4px;
   -webkit-border-radius: 4px;
+  -mox-border-radius:4px;
+  border-radius:4px;
   border:1px solid #dedede; 
   border-bottom-color:#bbb;
 }
-.media_callout img {float:left;}
-.media_callout .media_shadow{width:740px; height:10px; position:absolute; bottom:-10px; left:0; background:url('/images/shadow.png') no-repeat top;}
-
+.project img {float:left;}
+.project .shadow{width:740px; background-image:url('/images/shadow.png');}
 .project h3 {line-height:22px;}
 .project_description{margin-left:284px; padding-top:20px;}
 .project_keywords {color:#777; font-size:12px; line-height:18px;}
 #about_bios{margin-top:3em;}
+
+.bio {margin:1em -142px 2em -8px;}
+.bio_pic {position:relative;float:left;}
+
+.bio_pic img {
+  border:8px solid #fff; 
+  -webkit-box-shadow: 0 0 4px #ccc;
+  -moz-box-shadow: 0 0 4px #ccc;
+  box-shadow: 0 0 4px #ccc;
+}
+.bio_pic .shadow {width:262px; background-image:url('/images/shadow_small.png');}
+.bio_main {margin-left:284px; padding-top:10px;}
