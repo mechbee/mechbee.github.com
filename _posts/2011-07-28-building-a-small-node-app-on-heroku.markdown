@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Geek fun: building a lil' node.js app"
-categories: [heroku, node]
+categories: [heroku, node, javascript]
 author: judy
 ---
 

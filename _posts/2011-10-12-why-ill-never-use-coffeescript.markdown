@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I'll (probably) never use CoffeeScript"
-category: rails
+categories: [rails, javascript]
 author: dustin
 ---
 
