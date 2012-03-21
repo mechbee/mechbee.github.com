@@ -5,9 +5,9 @@ categories: [javascript]
 author: judy
 ---
 
-We were playing around with [three.js](https://github.com/mrdoob/three.js/) and nearly died of despair when we could not get the materials to show up on our otherwise perfect looking model for no discernible reason. In hindsight, it all seems so clear but at the time, we were not so zen.
+We were playing around with [three.js](https://github.com/mrdoob/three.js/) and nearly died of despair when we could not get the materials to show up on our completely black but otherwise perfect looking model for no discernible reason. In hindsight, our problem with light and not having it seems obvious but at the time, it was _really_ not obvious.
 
-So if someone gives you have an obj file with some jpgs that are supposed to be the textures for the model and asks you to render it in your browser with three.js, here's what to do:
+So if someone gives you an obj file with some jpgs that are supposed to be the textures for the model and asks you to render it in your browser with three.js, here's what to do:
 
 * Use the [blender exporter](https://github.com/mrdoob/three.js/tree/master/utils/exporters/blender) or the [python obj exporter](https://github.com/mrdoob/three.js/tree/master/utils/exporters/obj) to turn your obj file into a js file.
 
